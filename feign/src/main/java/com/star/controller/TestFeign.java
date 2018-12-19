@@ -19,9 +19,5 @@ public class TestFeign {
         return feignService.hello(name);
     }
 
-    @RequestMapping(value = "/hi1", method = RequestMethod.GET)
-    public String helloConsumer1(@RequestParam(value = "name" ,required = false) String name){
-        return feignService.hello(name);
-    }
 
 }
