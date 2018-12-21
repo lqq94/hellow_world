@@ -12,6 +12,8 @@
         <module name="eureka-zuul" />
         <module name="feign" />
         <module name="server-hi" />
+        <module name="service-lucy" />
+        <module name="service-turbine" />
         <module name="springcloud" />
       </profile>
     </annotationProcessing>
@@ -28,6 +30,8 @@
       <module name="feign" options="-parameters" />
       <module name="server-hi" options="-parameters" />
       <module name="service-feign" options="-parameters" />
+      <module name="service-lucy" options="-parameters" />
+      <module name="service-turbine" options="-parameters" />
     </option>
   </component>
 </project>

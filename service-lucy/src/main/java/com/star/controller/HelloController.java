@@ -24,12 +24,12 @@ public class HelloController {
 
     @RequestMapping(value = "/hi", method = RequestMethod.GET)
     @HystrixCommand(fallbackMethod = "hiError")
-    public String index(@RequestParam(value = "name" ,required = false) String name) {
-        StringBuffer uriList = new StringBuffer("Hello "+name+"----" + port + " 端口为您服务！<br>");
+    public String index(@RequestParam(value = "name", required = false) String name) {
+        StringBuffer uriList = new StringBuffer("Hello " + name + "----" + port + " 端口为您服务！<br>");
         return uriList.toString();
     }
 
-    public String hiError(String name){
-        return "hi,"+name+",sorry,error!";
+    public String hiError(String name) {
+        return "hi," + name + ",sorry,error!";
     }
 }

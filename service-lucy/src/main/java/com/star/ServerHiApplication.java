@@ -15,15 +15,16 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableHystrix
 @EnableHystrixDashboard
 @EnableCircuitBreaker
-public class ServerHiApplication {
+public class ServiceLucyApplication {
     /**
      * 访问地址 http://localhost:8762/actuator/hystrix.stream
+     *
      * @param args
      */
 
     public static void main(String[] args) {
 
-        SpringApplication.run(ServerHiApplication.class, args);
+        SpringApplication.run(ServiceLucyApplication.class, args);
     }
 
 }
